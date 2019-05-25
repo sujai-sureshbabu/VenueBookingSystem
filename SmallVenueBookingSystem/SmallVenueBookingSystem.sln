@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueBookingSystem.Services", "SmallVenueBookingSystem\VenueBookingSystem.Services.csproj", "{B68980E1-EFBB-45D2-A1D9-02A81309910D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueBookingSystem.Launcher", "VenueBookingSystem.Launcher\VenueBookingSystem.Launcher.csproj", "{678987B0-E1DE-4380-9E05-D8E7D50B93D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B68980E1-EFBB-45D2-A1D9-02A81309910D} = {B68980E1-EFBB-45D2-A1D9-02A81309910D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68980E1-EFBB-45D2-A1D9-02A81309910D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68980E1-EFBB-45D2-A1D9-02A81309910D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68980E1-EFBB-45D2-A1D9-02A81309910D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68980E1-EFBB-45D2-A1D9-02A81309910D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678987B0-E1DE-4380-9E05-D8E7D50B93D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678987B0-E1DE-4380-9E05-D8E7D50B93D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678987B0-E1DE-4380-9E05-D8E7D50B93D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678987B0-E1DE-4380-9E05-D8E7D50B93D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

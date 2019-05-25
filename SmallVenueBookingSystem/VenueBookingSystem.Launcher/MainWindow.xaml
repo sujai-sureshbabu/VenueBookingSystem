@@ -1,0 +1,48 @@
+﻿<Window x:Class="VenueBookingSystem.Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VenueBookingSystem.Launcher"
+        mc:Ignorable="d"
+        xmlns:viewmodel="clr-namespace:VenueBookingSystem.Launcher.ViewModels"
+        Title="MainWindow" Height="850" Width="900">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="281" Margin="147,127,0,0" VerticalAlignment="Top" Width="270" Background="Aqua">
+            <CheckBox x:Name="A1" Content="A1" Canvas.Left="26" Canvas.Top="45" IsEnabled="{Binding SeatA1}" IsChecked="{Binding Path=SeatA1Selected}" IsThreeState="False"/>
+            <CheckBox x:Name="A2" Content="A2" Canvas.Left="101" Canvas.Top="45"  IsEnabled="{Binding SeatA2}" IsChecked="{Binding SeatA2Selected}"/>
+            <CheckBox x:Name="A3" Content="A3" Canvas.Left="166" Canvas.Top="45" IsEnabled="{Binding SeatA3}" IsChecked="{Binding SeatA3Selected}"/>
+            <CheckBox x:Name="B1" Content="B1" Canvas.Left="26" Canvas.Top="87" RenderTransformOrigin="0.682,3.007" IsEnabled="{Binding SeatB1}" IsChecked="{Binding SeatB1Selected}"/>
+            <CheckBox x:Name="B2" Content="B2" Canvas.Left="101" Canvas.Top="87" IsEnabled="{Binding SeatB2}" IsChecked="{Binding SeatB2Selected}"/>
+            <CheckBox x:Name="B3w" Content="B3(w)" Canvas.Left="166" Canvas.Top="87" RenderTransformOrigin="0.083,1.874" IsEnabled="{Binding SeatB3w}" IsChecked="{Binding SeatB3wSelected}"/>
+            <CheckBox x:Name="C1" Content="C1" Canvas.Left="26" Canvas.Top="127" IsEnabled="{Binding SeatC1}" IsChecked="{Binding SeatC1Selected}"/>
+            <CheckBox x:Name="C2" Content="C2" Canvas.Left="101" Canvas.Top="127" RenderTransformOrigin="0.8,3.446" IsEnabled="{Binding SeatC2}" IsChecked="{Binding SeatC2Selected}"/>
+            <CheckBox x:Name="C3" Content="C3" Canvas.Left="166" Canvas.Top="127" IsEnabled="{Binding SeatC3}" IsChecked="{Binding SeatC3Selected}"/>
+
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="281" Margin="580,127,0,0" VerticalAlignment="Top" Width="270" Background="Aqua">
+            <CheckBox x:Name="A4" Content="A4" Canvas.Left="26" Canvas.Top="45" IsEnabled="{Binding SeatA4}" IsChecked="{Binding SeatA4Selected}"/>
+            <CheckBox x:Name="A5" Content="A5" Canvas.Left="102" Canvas.Top="45" IsEnabled="{Binding SeatA5}" IsChecked="{Binding SeatA5Selected}"/>
+            <CheckBox x:Name="A6" Content="A6" Canvas.Left="166" Canvas.Top="45" IsEnabled="{Binding SeatA6}" IsChecked="{Binding SeatA6Selected}"/>
+            <CheckBox x:Name="B4" Content="B4" Canvas.Left="26" Canvas.Top="87" RenderTransformOrigin="0.682,3.007" IsEnabled="{Binding SeatB4}" IsChecked="{Binding SeatB4Selected}"/>
+            <CheckBox x:Name="B5" Content="B5" Canvas.Left="102" Canvas.Top="87" IsEnabled="{Binding SeatB5}" IsChecked="{Binding SeatB5Selected}"/>
+            <CheckBox x:Name="B6w" Content="B6(w)" Canvas.Left="166" Canvas.Top="87" IsEnabled="{Binding SeatB6}" IsChecked="{Binding SeatB6wSelected}"/>
+            <CheckBox x:Name="C4" Content="C4" Canvas.Left="26" Canvas.Top="125" IsEnabled="{Binding SeatC4}" IsChecked="{Binding SeatC4Selected}"/>
+            <CheckBox x:Name="C5" Content="C5" Canvas.Left="103" Canvas.Top="125" RenderTransformOrigin="0.8,3.446" IsEnabled="{Binding SeatC5}" IsChecked="{Binding SeatC5Selected}"/>
+            <CheckBox x:Name="C6" Content="C6" Canvas.Left="166" Canvas.Top="125" IsEnabled="{Binding SeatC6}" IsChecked="{Binding SeatC6Selected}"/>
+
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="281" Margin="417,127,0,0" VerticalAlignment="Top" Width="163" Background="BurlyWood">
+            <Label x:Name="label" Content="ISLE" Canvas.Left="62" Canvas.Top="138"/>
+            <Button x:Name="button" Content="BookSeats" Canvas.Left="43" Canvas.Top="220" Width="75" Command="{Binding BookSeatCommand, Mode=OneWay}"/>
+        </Canvas>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="122" Margin="147,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="703"/>
+        <Ellipse Fill="Coral" HorizontalAlignment="Left" Height="119" Margin="147,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="703"/>
+        <Label x:Name="label1" Content="STAGE" HorizontalAlignment="Left" Margin="472,34,0,0" VerticalAlignment="Top" Width="54"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="277" Margin="68,481,0,0" VerticalAlignment="Top" Width="277">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock"/>
+            <TextBox x:Name="textBox" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+            <TextBox x:Name="textBox1" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+        </ListBox>
+    </Grid>
+</Window>
